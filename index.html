@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rachel Wiecking — UX Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #F5F0E8;
+    --ink: #1A1714;
+    --muted: #8A8178;
+    --rule: #D4CFC7;
+    --accent: #C4735A;
+  }
+
+  html, body {
+    height: 100%;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 56px;
+  }
+
+  .site-name {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .site-role {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .pdf-wrap {
+    position: fixed;
+    top: 56px; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    background: #EDEAE3;
+  }
+
+  iframe {
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    margin: -2px;
+    border: none;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="site-name">Rachel Wiecking</span>
+  <span class="site-role">UX Researcher</span>
+</header>
+
+<div class="pdf-wrap">
+  <iframe
+    src="case_studies.pdf#toolbar=0&navpanes=0&scrollbar=1"
+    title="Case Studies">
+  </iframe>
+</div>
+
+</body>
+</html>
